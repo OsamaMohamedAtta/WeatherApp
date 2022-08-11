@@ -115,19 +115,8 @@ $(function() {
 $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
-//Switch dark/light back to top
-$(".switch").on('click', function () {
-    if ($("body").hasClass("light")) {
-        $("body").removeClass("light");
-        $(".switch").removeClass("switched");
-    }
-    else {
-        $("body").addClass("light");
-        $(".switch").addClass("switched");
-    }
-});
+//Scroll back to top
 $(document).ready(function(){
-    //Scroll back to top
     let progressPath = document.querySelector('.progress-wrap path');
     let pathLength = progressPath.getTotalLength();
     progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
@@ -157,6 +146,3 @@ $(document).ready(function(){
         return false;
     })
 });
-
-
-
