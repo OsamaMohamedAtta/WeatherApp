@@ -1,0 +1,304 @@
+/* CSS INDEX
+===================
+01. Theme default CSS
+02. Header-area css hear
+03. about-area css hear
+04. search-area css hear
+05. mobileApp-area css hear
+06. subscribe-area css hear
+07. footer-area css hear
+08. backTo_top-arrow css hear */
+/*----------------------------------------
+ 01.  Theme default CSS
+----------------------------------------*/
+img {max-width:100%;height:auto}
+p {margin: 0 0 15px;}
+h1,
+h2, 
+h3, 
+h4, 
+h5,
+h6 {
+  margin: 0 0 10px;
+}
+a {text-decoration:none;color:#fff;}
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+ul{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0
+}
+body {
+    line-height: 1.9;
+    font-family: century-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+.main-color {
+    background-color: #37aec3;
+}
+.main-button{
+    border: #37aec3 solid 1px;
+    padding: 0.4rem 1rem;
+    border-radius: 30px;
+    background-color: #37aec3;
+    color: #fff;
+    transition: 0.3s;
+}
+.main-button:hover{
+    background-color: #fff;
+    color: #37aec3;
+}
+/*----------------------------------
+02. Header-area css hear
+------------------------------------*/
+.navbar-brand{
+    color: #fff !important;
+}
+.navbar-link{
+    color: #fff;
+    margin-right: 2rem;
+    padding: 0.8rem 0.5rem;
+}
+.navbar-link:hover{
+    color: #fff;
+}
+.active{
+    border-bottom: #fff 1px solid;
+}
+.navbar-link{
+  position: relative;
+}
+.navbar-link::after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+.navbar-link:hover:after {
+    transform: scaleX(1);
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-light .navbar-toggler{
+    border-color: #fff;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+/* --------------------------- */
+/* 03. about-area css hear */
+/* --------------------------- */
+.about-info{
+    padding: 4rem 4rem 0rem 0rem;
+}
+.about-info h2{
+    color: #37aec3;
+}
+.about-info p{
+    color: #455a64;
+}
+/* --------------------------- */
+/* 04. search-area css hear */
+/* --------------------------- */
+.search-box{
+    position: relative;
+}
+.search-box input{
+    text-indent: 25px;
+    padding: 0.7rem 0.4rem;
+    border-color:#37aec3;
+    border-radius: 30px;
+}
+.search-box .fa-search{
+    position: absolute;
+    top: 16px;
+    left: 14px;
+    color: #818f96;
+    z-index: 999;
+}
+.search-box input::placeholder{
+    font-family: Arial;
+}
+/* card css hear */
+.city-temp-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+.head-card{
+    background-color: #374850;
+    color: #bfc1c8;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 17px;
+}
+.card-continer{
+    background-color: #2898ac;
+    color: #fff;
+    padding: 1rem 1rem 1rem 1.2rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.weather-type{
+    font-size: 14px;
+    color: #374850;
+}
+.deagre{
+    font-size: 3.5rem;
+}
+.icon-weather img{
+    width: 95px;
+}
+.card-continer-nextday{
+    padding: 2rem 1.2rem;
+    background-color: #63c3d4;
+    transition: 0.5s;
+}
+.city-temp-card:hover .card-continer-nextday{
+    background-color: #2898ac;
+}
+/* --------------------------- */
+/* 05. mobileApp-area css hear */
+/* --------------------------- */
+.mobile-app-info h2{
+    color: #37aec3;
+}
+.mobile-app-info p{
+    color: #455a64;
+}
+/* --------------------------- */
+/* 06. subscribe-area css hear */
+/* --------------------------- */
+.subscribe-img{
+    width: 80%;
+}
+.subscribe-info h2{
+    color: #37aec3;
+}
+.subscribe-info p{
+    color: #455a64;
+}
+.subscribe-input{
+    position: relative;
+}
+.subscribe-input input{
+    text-indent: 28px;
+    padding: 0.5rem 0.6rem;
+    border-color:#37aec3;
+    border-radius: 30px;
+}
+.subscribe-input .fa-envelope{
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    color: #818f96;
+}
+.subscribe-input input::placeholder{
+    font-family: Arial;
+}
+/* --------------------------- */
+/* 07. footer-area css hear */
+/* --------------------------- */
+.footer-section{
+    background-color: #374850;
+    color: #fff;
+}
+.footer-soical i{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer-soical i:hover{
+    color: #37aec3;
+}
+/* --------------------------- */
+/* 08. backTo_top-arrow css hear */
+/* --------------------------- */
+.progress-wrap {
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    border-radius: 50px;
+    box-shadow: inset  0 0 0 2px #37aec3;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.progress-wrap.active-progress {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.progress-wrap::after {
+    position: absolute;
+    font-family: 'unicons';
+    content: '↑';
+    text-align: center;
+    line-height: 46px;
+    font-size: 24px;
+    color: #37aec3;
+    left: 0;
+    top: 0;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.progress-wrap:hover::after {
+    opacity: 0;
+}
+.progress-wrap::before {
+    position: absolute;
+    font-family: 'unicons';
+    content: '↑';
+    text-align: center;
+    line-height: 46px;
+    font-size: 24px;
+    opacity: 0;
+    color: #22a8c0;
+    left: 0;
+    top: 0;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    z-index: 2;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.progress-wrap:hover::before {
+    opacity: 1;
+}
+.progress-wrap svg path { 
+    fill: none; 
+}
+.progress-wrap svg.progress-circle path {
+    stroke: white;
+    stroke-width: 4;
+    box-sizing:border-box;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+   

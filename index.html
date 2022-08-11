@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <!-- Font Family Link -->
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+    <!-- autocomplete CSS hear -->
+    <link rel="stylesheet" href="css/jquery.autocomplete.css">
+    <!-- bootstrap CSS hear -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Fontawesome CSS hear -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- style CSS hear -->
+    <link rel="stylesheet" href="style.css">
+    <!-- responsive CSS hear -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- ====== header start ====== -->
+    <div class="sm-bg"></div>
+    <!-- wave-start -->
+    <div class="position-relative wave">
+        <svg class="d-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 195">
+            <path fill="#37aec3" fill-opacity="1" width="100%" hight="100%"
+                d="M0,192L60,176C120,160,240,128,360,117.3C480,107,600,117,720,133.3C840,149,960,171,1080,160C1200,149,1320,107,1380,85.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+            </path>
+        </svg>
+    </div>
+    <!-- wave-end -->
+    <header class="header-area position-absolute w-100 top-0 mt-md-4 mt-sm-2 mt-xs-0" id="home">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="logo"> Weather
+                </a>
+                <!-- main-menu start -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li><a class="navbar-link active" href="#home">Home</a></li>
+                        <li><a class="navbar-link" href="#about">About</a></li>
+                        <li><a class="navbar-link" href="#search">Search</a></li>
+                        <li><a class="navbar-link" href="#mobile-app">Mobile App</a></li>
+                        <li><a class="navbar-link" href="#subscribe">Subscribe</a></li>
+                    </ul>
+                </div>
+                <!-- main-menu end-->
+            </nav>
+        </div><!-- container -->
+    </header>
+    <!-- ====== header end ====== -->
+
+    <!--==== about-area start ====-->
+    <section class="about-area" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12">
+                    <div class="about-info">
+                        <h2 class="mb-4">Weather App</h2>
+                        <p>Having an up to date information about the weather helps us to take well-read decisions.
+                            These weather apps constantly update the forecasts for a day or hour or sometimes for even a
+                            minute. These can be simply termed as the compact weather devices, as they do not only tell
+                            about the temperature of that specific region instead they can describe the accurate time of
+                            the sunrise and sunset, the time of the rainfall, humidity levels, etc.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="about-img">
+                        <img src="img/raining-animate-1.svg" alt="raining-animate">
+                    </div>
+                </div>
+            </div>
+            <!--/.row-->
+        </div><!-- container -->
+    </section>
+    <!--==== about-area end ====-->
+
+    <!--==== search-area start ====-->
+    <section class="search py-5" id="search">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="search-box m-auto col-lg-4 col-md-10 col-sm-12">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="form-control" id="searchForm" placeholder="Sraech City...">
+                    </div>
+                </div>
+            </div><!--/.row 1-->
+            <div class="row" id="container-section">
+                <!-- this section get from js -->
+            </div><!--/.row 2-->
+        </div><!-- container -->
+    </section>
+    <!--==== search-area end ====-->
+
+    <!-- mobileApp-area start -->
+    <section class="py-5" id="mobile-app">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div class="mobile-img m-auto">
+                        <img src="img/download.png" alt="mobile-img">
+                    </div>
+                </div>
+                <div class="mobile-app-info col-lg-8 col-md-12 text-center mt-4">
+                    <h2 class="fs-3 mb-4">Mobile App</h2>
+                    <p class="px-md-5 px-sm-0">This weather app is one of best free weather apps with full features:
+                    Local weather weather map (weather map service) and weather widgets.</p>
+                    <div class="mt-4">
+                        <button class="main-button me-1">Download Android</button>
+                        <button class="main-button ms-1">Download IOS</button>
+                    </div>
+                </div>
+            </div><!-- row -->
+        </div><!-- container -->
+    </section>
+    <!-- mobileApp-area end -->
+
+    <!-- subscribe-area start -->
+    <section class="py-5" id="subscribe">
+        <div class="container">
+            <div class="row mobile-section">
+                <div class="col-lg-7 col-md-12 text-center px-lg-5 px-md-0 pt-4">
+                    <div class="subscribe-info">
+                        <h2 class="fs-4">Subscribe</h2>
+                        <p>Get daily weather updates, quotes & more..</p>
+                        <div class="subscribe-input">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" class="form-control" placeholder="Enter your email to subscribe..">
+                        </div>
+                        <button class="main-button mt-4">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 col-md-12">
+                    <div class="subscribe-img m-auto">
+                        <img src="img/subscribe.png" alt="subscribe-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- subscribe-area end -->
+
+    <!-- footer-area start -->
+    <footer class="footer-section py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-info text-center">
+                        <p class="mb-0">Copyright © 2022 Designed by Osama Atta. All rights reserved</p>
+                    </div>
+                    <div class="footer-soical">
+                        <ul class="d-flex justify-content-center">
+                            <li class="px-1"><i class="fa-brands fa-facebook"></i></li>
+                            <li class="px-1"><i class="fab fa-twitter"></i></li>
+                            <li class="px-1"><i class="fab fa-instagram"></i></li>
+                            <li class="px-1"><i class="fab fa-linkedin-in"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area end -->
+
+	<!-- backTo_Top-arrow start -->				
+	<div class="progress-wrap">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+		</svg>
+	</div>
+    <!-- backTo_Top-arrow end -->		
+
+    
+    <!-- jquery js hear -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!-- autocompelet js hear -->
+    <script src="js/jquery.autocomplete.js"></script>
+    <!-- autocomplete.name js hear -->
+    <script src="js/autocomplete.names.js"></script>
+    <!-- bootstrap js hear -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/script.js"></script>        
+</body>
+
+</html>
